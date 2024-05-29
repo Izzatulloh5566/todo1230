@@ -12,7 +12,6 @@ const ContextProvider = ({ children }) => {
     const [text, setText] = useState('')
     const [update, setUpdate] = useState({ note: {}, edit: false })
     const [value, setValue] = useState("")
-
     useEffect(() => {
         localStorage.setItem("notes", JSON.stringify(notes))
     }, [notes])

@@ -7,6 +7,7 @@ import Note from './Note';
 const Notes = () => {
     const [grid, setGrid] = useState(true)
     const { lang, notes, value } = useContext(Context)
+    
     const filterNotes = notes.filter(note => {
         if (value.trim() == '') {
             return note
